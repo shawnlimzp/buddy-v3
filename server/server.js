@@ -59,8 +59,8 @@ const corsOptions = {
     console.log("listening to Port", app.get("port"));
 });
 //shawn
-app.route('/chestworkouts', cors(corsOptions)).get(function (request, response){
-    db.query('SELECT * FROM FitnessList WHERE fitnessBodyPart = "Chest";',
+app.route('/getChest', cors(corsOptions)).get(function (request, response){
+    db.query('SELECT * FROM Team2.FitnessList WHERE fitnessBodyPart = "Chest";',
      function (error, result, fields) {
         if (error) {
             console.log('Error message: ', error);
