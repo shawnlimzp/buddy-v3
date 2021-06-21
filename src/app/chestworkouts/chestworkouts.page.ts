@@ -20,7 +20,7 @@ export class ChestworkoutsPage{
   }
 
   async getChest(){
-    var url = 'https://buddy-v3.herokuapp.com/getChest';
+    var url = 'https://buddy-v3.herokuapp.com/chestworkouts';
     this.http.get(url).subscribe(data => {
     this.FitnessList=data
   })
