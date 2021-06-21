@@ -9,10 +9,10 @@ import { WorkoutsService } from '../shared/services/workouts.service';
 })
 export class ChestworkoutsPage{
 
-  workouts: any = [];
+  FitnessList: any = [];
 
   constructor(public http: HttpClient, private workoutService: WorkoutsService,) {
-    this.workouts = this.workoutService.getProducts();
+    this.FitnessList = this.workoutService.getProducts();
    }
 
   ngOnInit() {
@@ -22,7 +22,7 @@ export class ChestworkoutsPage{
   async getChest(){
     var url = 'https://buddy-v3.herokuapp.com/getChest';
     this.http.get(url).subscribe(data => {
-    this.workouts=data
+    this.FitnessList=data
   })
 }
 

@@ -9,10 +9,11 @@
 
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let item of workouts">
-    <ion-label>
+    <ion-item *ngFor="let item of FitnessList">
+      <ion-label [routerLink]="['/chestworkouts', item.fitnessID]">
     <h2>{{item.fitnessName}}</h2>
     <p>{{item.fitnessDescription}}</p>
+    <p>{{item.fitnessSet}}</p>
 
     </ion-label>
     </ion-item>

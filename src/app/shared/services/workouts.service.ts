@@ -5,6 +5,9 @@ import { Workout } from '../model/workout';
   providedIn: 'root'
 })
 export class WorkoutsService {
+  getChest(): any {
+    throw new Error('Method not implemented.');
+  }
 
   workouts: Workout[] = [];
 
