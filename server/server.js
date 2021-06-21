@@ -60,7 +60,7 @@ const corsOptions = {
 });
 //shawn
 app.route('/getChest', cors(corsOptions)).get(function (request, response){
-    db.query('SELECT * FROM FitnessList WHERE fitnessBodyPart = "Chest";',
+    db.query('SELECT * FROM FitnessList WHERE fitnessBodyPart = Chest;',
      function (error, result, fields) {
         if (error) {
             console.log('Error message: ', error);
