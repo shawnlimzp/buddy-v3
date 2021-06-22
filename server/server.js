@@ -58,7 +58,8 @@ const corsOptions = {
     app.listen(app.get('port'), function () {
     console.log("listening to Port", app.get("port"));
 });
-//shawn
+
+//shawn chestworkouts page
 app.route('/chestworkouts', cors(corsOptions)).get(function (request, response) {
     db.query('SELECT * FROM FitnessList WHERE fitnessBodyPart = "Chest";', function (error, result, fields) {
         if (error) {
@@ -71,3 +72,15 @@ app.route('/chestworkouts', cors(corsOptions)).get(function (request, response) 
     })
 })
 
+//shawn backworkouts page
+app.route('/backworkouts', cors(corsOptions)).get(function (request, response) {
+    db.query('SELECT * FROM FitnessList WHERE fitnessBodyPart = "Back";', function (error, result, fields) {
+        if (error) {
+            console.log('Error message: ', error);
+            throw error;
+        };
+        console.log(result)
+        response.send(result);
+    //sent all item details
+    })
+})
