@@ -8,7 +8,9 @@ export class WorkoutsService {
   getChest(): any {
     throw new Error('Method not implemented.');
   }
-
+  getBack(): any {
+    throw new Error('Method not implemented.');
+  } 
 
   workouts: Workout[] = [];
 
@@ -18,7 +20,5 @@ export class WorkoutsService {
     return this.workouts;
   }
 
-  getBack(): any {
-    throw new Error('Method not implemented.');
-  }
+
 }
