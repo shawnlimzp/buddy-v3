@@ -9,11 +9,16 @@ export class WorkoutsService {
     throw new Error('Method not implemented.');
   }
 
+
   workouts: Workout[] = [];
 
   constructor() { }
 
   getProducts(): Workout[] {
     return this.workouts;
+  }
+
+  getBack(): any {
+    throw new Error('Method not implemented.');
   }
 }

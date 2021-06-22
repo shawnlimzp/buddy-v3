@@ -7,7 +7,7 @@ import { WorkoutsService } from '../shared/services/workouts.service';
   templateUrl: './backworkouts.page.html',
   styleUrls: ['./backworkouts.page.scss'],
 })
-export class ChestworkoutsPage{
+export class BackworkoutsPage{
 
   FitnessList: any = [];
 
