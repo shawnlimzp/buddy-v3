@@ -11,6 +11,7 @@
   <ion-list>
     <ion-item *ngFor="let item of FitnessList">
       <ion-label [routerLink]="['/backworkouts', item.fitnessID]">
+        
     <h2>Name: {{item.fitnessName}}</h2>
     <h3>Description: {{item.fitnessDescription}}</h3>
     <p>Sets: {{item.fitnessSet}}</p>
